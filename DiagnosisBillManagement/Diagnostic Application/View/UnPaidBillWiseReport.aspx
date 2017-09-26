@@ -1,0 +1,85 @@
+﻿<%@ Page Language="C#" Title="Unpaid Bill Wise Report" MasterPageFile="../master.Master"  AutoEventWireup="true" CodeBehind="UnPaidBillWiseReport.aspx.cs" Inherits="Diagnostic_Application.View.UnPaidBillWiseReport" %>
+
+
+<asp:Content ID="upPaidBillWiseReport" ContentPlaceHolderID="MainContent" runat="server">
+
+    <form id="form1" class="form-horizontal" runat="server">
+        <h3 class="title">Unpaid Bill Report</h3>
+        <asp:Label ID="InfoMessageLabel" CssClass="infoMessage" runat="server" Visible="false" Text=""></asp:Label>
+        <div class="col-lg-8">
+            <!-- type setup -->
+            <div class="type-setup">
+                <div class="form-group">
+                    <asp:Label ID="TestTypeLabel" runat="server" class="col-sm-3 control-label" Text="From Date"></asp:Label>
+                    <div class="col-sm-9">
+                        <asp:TextBox ID="FormDateTextBox" TextMode="Date" class="form-control" runat="server"></asp:TextBox>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <asp:Label ID="Label1" runat="server" class="col-sm-3 control-label" Text="To Date"></asp:Label>
+                    <div class="col-sm-9">
+                        <asp:TextBox ID="ToDateTextBox" TextMode="Date" class="form-control" runat="server"></asp:TextBox>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-9">
+                        <asp:Button ID="ShowButton" runat="server" class="btn btn-primary right" Text="Show" OnClick="ShowButton_Click" />
+                    </div>
+                </div>
+            </div>
+            <!-- type setup -->
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-12">
+                <asp:GridView 
+                    ID="TypeWiseReportGridView" 
+                    CssClass="table table-bordered custom-table" 
+                    HorizontalAlign="Center" 
+                    runat="server" 
+                    AutoGenerateColumns="False" 
+                    EmptyDataText="No data available." 
+                    BackColor="White" 
+                    BorderColor="#4D6082" 
+                    BorderStyle="None" 
+                    BorderWidth="1px" 
+                    CellPadding="3" 
+
+                    ShowFooter="True" OnRowDataBound="TypeWiseReportGridView_RowDataBound">
+                    
+                        <Columns>
+                            <asp:TemplateField HeaderText="SL">
+                                <ItemTemplate><%# Container.DataItemIndex + 1 %></ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:BoundField DataField="PatientName" HeaderText="Patient Name" />
+                        <asp:BoundField DataField="BillNo" HeaderText="Bill No" />
+                        <asp:BoundField DataField="MobileNo" HeaderText="Mobile No" />
+                        <asp:BoundField DataField="TotalAmount" HeaderText="Total" />
+                        </Columns>
+                        <FooterStyle BackColor="#008B8B" Font-Bold="True" ForeColor="#000000" />
+                        <HeaderStyle BackColor="#008B8B" Font-Bold="True" ForeColor="#000000" />
+                        <PagerStyle BackColor="#FFFFCC" ForeColor="#330099" HorizontalAlign="Center" />
+                        <RowStyle BackColor="White" ForeColor="#330099" />
+                        <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="#663399" />
+                        <SortedAscendingCellStyle BackColor="#FEFCEB" />
+                        <SortedAscendingHeaderStyle BackColor="#AF0101" />
+                        <SortedDescendingCellStyle BackColor="#F6F0C0" />
+                        <SortedDescendingHeaderStyle BackColor="#7E0000" />
+                    </asp:GridView>
+
+            </div>
+        </div>
+        
+        
+        
+        <div class="row">
+            <div class="col-lg-12">
+                <asp:Button ID="PdfButton" runat="server" cssClass="btn btn-primary right" Text="PDF" OnClick="PdfButton_Click" />
+                    
+            </div>
+        </div>
+
+    </form>
+</asp:Content>

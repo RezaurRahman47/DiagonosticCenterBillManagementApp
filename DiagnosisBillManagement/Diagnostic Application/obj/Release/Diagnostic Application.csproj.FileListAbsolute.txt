@@ -1,0 +1,23 @@
+C:\Users\remon\Desktop\Static\DiagnosisBillManagement\Diagnostic Application\bin\roslyn\csc.exe
+C:\Users\remon\Desktop\Static\DiagnosisBillManagement\Diagnostic Application\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\remon\Desktop\Static\DiagnosisBillManagement\Diagnostic Application\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\remon\Desktop\Static\DiagnosisBillManagement\Diagnostic Application\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\remon\Desktop\Static\DiagnosisBillManagement\Diagnostic Application\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\remon\Desktop\Static\DiagnosisBillManagement\Diagnostic Application\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\remon\Desktop\Static\DiagnosisBillManagement\Diagnostic Application\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\remon\Desktop\Static\DiagnosisBillManagement\Diagnostic Application\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\remon\Desktop\Static\DiagnosisBillManagement\Diagnostic Application\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\remon\Desktop\Static\DiagnosisBillManagement\Diagnostic Application\bin\roslyn\vbc.exe
+C:\Users\remon\Desktop\Static\DiagnosisBillManagement\Diagnostic Application\bin\roslyn\VBCSCompiler.exe
+C:\Users\remon\Desktop\Static\DiagnosisBillManagement\Diagnostic Application\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\remon\Desktop\Static\DiagnosisBillManagement\Diagnostic Application\bin\Diagnostic Application.dll.config
+C:\Users\remon\Desktop\Static\DiagnosisBillManagement\Diagnostic Application\bin\Diagnostic Application.dll
+C:\Users\remon\Desktop\Static\DiagnosisBillManagement\Diagnostic Application\bin\Diagnostic Application.pdb
+C:\Users\remon\Desktop\Static\DiagnosisBillManagement\Diagnostic Application\bin\itextsharp.dll
+C:\Users\remon\Desktop\Static\DiagnosisBillManagement\Diagnostic Application\bin\itextsharp.pdfa.dll
+C:\Users\remon\Desktop\Static\DiagnosisBillManagement\Diagnostic Application\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\remon\Desktop\Static\DiagnosisBillManagement\Diagnostic Application\bin\itextsharp.xml
+C:\Users\remon\Desktop\Static\DiagnosisBillManagement\Diagnostic Application\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\remon\Desktop\Static\DiagnosisBillManagement\Diagnostic Application\obj\Release\Diagnostic Application.csprojResolveAssemblyReference.cache
+C:\Users\remon\Desktop\Static\DiagnosisBillManagement\Diagnostic Application\obj\Release\Diagnostic Application.dll
+C:\Users\remon\Desktop\Static\DiagnosisBillManagement\Diagnostic Application\obj\Release\Diagnostic Application.pdb

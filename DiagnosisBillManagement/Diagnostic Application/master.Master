@@ -1,0 +1,124 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="Diagnostic_Application.master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <!-- boostrap -->
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet"/>
+    <!-- font-awesome -->
+    <!-- script files -->
+    <asp:ContentPlaceHolder ID="header_section" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <!-- container -->
+    <div class="container">
+        <div class="header-banner">
+            <img class="img-responsive header_logo" src="/images/Hospitalbanner.jpg" alt="site_logo" /> 
+           
+  
+        </div>
+
+
+        <nav class="navbar navbar-default navigation" style ="background-color:bisque ;">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+      <ul class="nav nav-tabs">
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Setup</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="TestTypeSetupUI.aspx">Test Type Setup</a>
+      <div class="dropdown-divider">
+          <a class="dropdown-item" href=TestSetupUI.aspx>Test</a>
+      </div>
+     
+    </div>
+  </li>
+           <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Test Request</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="TestRequestEntryUI.aspx">Entry</a>
+      <div class="dropdown-divider">
+         <a class="dropdown-item" href="PaymentUI.aspx">Payment</a>
+      </div>
+     
+    </div>
+  </li>
+
+          
+           <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Reports</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="TestWiseReport.aspx">Test Wise Report</a>
+      <div class="dropdown-divider">
+         <a class="dropdown-item" href="TypeWiseReport.aspx">Type Wise </a>
+      </div>
+     <a class="dropdown-item" href="UnPaidBillWiseReport.aspx">Unpaid Bill </a>
+    </div>
+  </li>
+</ul>
+                </div>
+
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="Default.aspx">Home <span class="sr-only">(current)</span></a></li>
+                    <%--<li><a href="#">Help</a></li>--%>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+  </nav>
+        
+ 
+
+          <div class="col-lg-8 main">
+              <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+          </div>
+        </div>
+        
+
+    
+    
+        
+   <%-- <section id="footer-section" style ="background-color:brown">
+        <div class="row">
+            <div class="col-gl-12">
+                <p>&copy; Muhaiminul,Rimon,Khorshed<a href="http://www.google.com">Static group</a> </p>
+            </div>
+        </div>
+    </section>--%>
+    <!-- /container -->
+    
+    <script type="text/javascript" src="/js/Scripts/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="/js/custom-script.js"></script>
+
+
+  <%--  <ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Disabled</a>
+  </li>
+</ul>--%>
+</body>
+</html>
